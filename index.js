@@ -32,12 +32,17 @@ let platosDisponibles = [
 
 let miDiv1 = document.querySelector("#div1")
 let ipt1 = document.querySelector("#input1")
-let sl = document.querySelector("#")
+let sl = document.querySelector("#sele")
 
 function hola(){
-    miDiv1.innerHTML = ` ${ipt1.value}
-    
-    
-    `; 
+    miDiv1.innerHTML = ipt1.value
+    ; 
 }
 ipt1.addEventListener("input", hola)
+
+function select(){
+    miDiv1.innerHTML = ` ${ipt1.value}  ${sl.value}
+    
+    `
+}
+ipt1.addEventListener("change", select)
