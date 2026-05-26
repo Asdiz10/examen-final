@@ -31,17 +31,24 @@ let platosDisponibles = [
 
 
 let miDiv1 = document.querySelector("#div1")
+let miDivv = document.querySelector("#divv")
 let ipt1 = document.querySelector("#input1")
 let sl = document.querySelector("#sele")
 
 
 function select(){
-    miDiv1.innerHTML = ` ${ipt1.value}  ${sl.value}
+    miDiv1.innerHTML = ` ${ipt1.value} ${sl.value}
     
-    `
+    `;
 }
-ipt1.addEventListener("change", select)
-ipt1.addEventListener("input", select);
+ipt1.addEventListener("input", select)
+
+
+
+function dia(){
+    miDivv.innerHTML =  sl.value;
+}
+sl.addEventListener("change", dia);
 
 
 
@@ -59,7 +66,7 @@ function recorre(){
         <h3>Nombre: ${platosDisponibles[i].nombre}</h3>
         <p>Descripción: ${platosDisponibles[i].descripcion}</p>
         <p>Descripción: ${platosDisponibles[i].precio}</p>
-        <img src="${platosDisponibles[i].foto}">
+        <img src="${platosDisponibles[i].foto}" alt="fotos">
         </div>       
         `
     }

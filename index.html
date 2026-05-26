@@ -10,7 +10,7 @@
             padding: 15px;
             margin: 5px;
             border-radius: 10px;
-            width: 250px;
+            width: 200px;
             background-color: #f9f9f9;
             display: inline-block;
             vertical-align: top;
@@ -25,15 +25,16 @@
 
     <main>
 
-        <div class="border p-5 mt-20">
+        <div class="border gap-1 p-5 mt-20 flex">
             <div id="div1"></div>
+            <br>
+            <div id="divv"></div>
         </div>
-        <div class="border w-50 p-10 flex flex-col justify-center mt-10">
-            <input class="border rounded" id="input1" type="text">
-        </div>
+        
 
-        <div class="flex flex-col justify-center items-center border rounded  w-50 mt-5">
-            <select name="" id="sele">
+        <div class="bg-slate-500 gap-2 p-2 flex flex-col justify-center items-center border rounded  w-50 mt-5">
+            <input class="border rounded bg-white" id="input1" type="text">
+            <select class="border rounded bg-white" name="" id="sele">
                 <option value=""></option>
                 <option value="Lunes">LUNES</option>
                 <option value="Martes">MARTES</option>
@@ -45,13 +46,10 @@
             </select>
         </div>
 
-        <div class="border rounded p-5 mt-5">
-            <div id="cartas"></div>
+        <div class="border rounded p-5 mt-5 flex flex-col justify-center items-center">
+            <div class="flex" id="cartas"></div>
             <button class="rounded border" id="boton2">Borrar</button>
-            <select name="" id=""></select>
-            <button id="boton3">Añadir</button>
         </div>
-        
         
     </main>
 
