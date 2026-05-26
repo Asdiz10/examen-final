@@ -71,23 +71,6 @@ function recorre(){
 }
 recorre()
 
-
-
-function pintarPlato(){
-    let platoNuevo = {
-    nombre: "Kebab",
-    descripcion: "Kebab con salsa Cesar",
-    tipo: "primero",
-    precio: 10.0,
-    foto: "kebab.jpg",
-  };
-
-    platosDisponibles.push(platoNuevo)
-
-    cartasdiv.innerHTML = platoNuevo
-}
-btn3.addEventListener("click", pintarPlato)
-
 function borrarCarta(){
     cartasdiv.innerHTML = " "
 }
