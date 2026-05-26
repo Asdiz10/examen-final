@@ -37,9 +37,7 @@ let sl = document.querySelector("#sele")
 
 
 function select(){
-    miDiv1.innerHTML = ` ${ipt1.value} ${sl.value}
-    
-    `;
+    miDiv1.innerHTML = ipt1.value;
 }
 ipt1.addEventListener("input", select)
 
